@@ -1,0 +1,16 @@
+{
+  "name": "media-core",
+  "version": "0.1.0",
+  "description": "Framework-agnostic Pexels SDK core (no React, no DOM, no RN)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test:smoke": "tsx test/smoke-test.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "tsx": "^4.16.0",
+    "dotenv": "^16.4.0"
+  }
+}

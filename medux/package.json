@@ -3,11 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspace=apps/web",
+    "build:all": "npm run build --workspace=packages/media-core && npm run build --workspace=packages/media-react && npm run build --workspace=packages/media-native && npm run build --workspace=packages/media-ui-react && npm run build --workspace=packages/media-ui-native",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview --workspace=apps/web",
+    "test:smoke": "npm run test:smoke --workspace=packages/media-core"
   },
   "dependencies": {
     "react": "^19.2.8",

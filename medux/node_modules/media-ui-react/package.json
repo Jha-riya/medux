@@ -1,0 +1,17 @@
+{
+  "name": "media-ui-react",
+  "version": "0.1.0",
+  "description": "Headless React UI component library for media grids, lightboxes, and reel swipers. Zero deps on media-core or media-react.",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "typescript": "^5.5.0"
+  }
+}
